@@ -1007,7 +1007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610635288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1799998, y: 4.9, z: -3.47}
+  m_LocalPosition: {x: 1.1799998, y: 4.9, z: -1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1451,13 +1451,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4678153c3fbf6e4c879668cc7ac097a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  code: 00000000000000000000000000000000
   white: {fileID: 2100000, guid: da873689b28d0794894ee1fe67954a18, type: 2}
   yellow: {fileID: 2100000, guid: 9cba5e5daf061ac4da448335048dbca9, type: 2}
   orange: {fileID: 2100000, guid: fc2c597d43c61614193c1bc718b6098e, type: 2}
   green: {fileID: 2100000, guid: 9a6d91a9bd9e54b40a922ee3a357382e, type: 2}
   pink: {fileID: 2100000, guid: 60930cfb58e40b242b66ab180d8e7e92, type: 2}
   purple: {fileID: 2100000, guid: 61759d744dbb3db4e82a7a9cd27558d3, type: 2}
+  hDistanceBlender: 1.314
+  holeDistance: 0.82782
 --- !u!23 &1025550312
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1466,7 +1467,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025550310}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
