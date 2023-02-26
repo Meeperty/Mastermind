@@ -1,2 +1,4 @@
 pegs holes go -0.5m in
 peg selector row is 8 units long
+top left peg goes at 2.588, 8.127, -1.709
+distance between holes is 0.7875

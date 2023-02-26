@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,14 +17,29 @@ public class Game : MonoBehaviour
     public Material pink;
     public Material purple;
 
+    readonly Vector3 topLeft = new Vector3(2.588f, 8.127f, -1.709f);
+    public float hDistanceBlender = 1.325f;
+    public float holeDistance;
+
     // Start is called before the first frame update
     void Start()
     {
+		holeDistance = 0.63f * hDistanceBlender;
+		for (int i = 0; i < 10; i++)
+		{
+			for (int j = 0; j < 4; j++)
+			{
+				float xValue = topLeft.x + (j * holeDistance);
+				float yValue = topLeft.y + (i * -holeDistance);
+				float zValue = topLeft.z;
+                holes[i,j].position = new Vector3(xValue, yValue, zValue);
+                //holes[i, j].enabled = false;
+			}
+		}
+	}
 
-    }
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         
     }

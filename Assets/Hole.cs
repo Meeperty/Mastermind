@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Hole
+public class Hole
 {
-    Empty,
-    White,
-    Orange,
-    Yellow,
-    Green,
-    Pink,
-    Purple
+    public HoleColor color;
+    public Vector3 position;
+    public bool enabled;
 }
