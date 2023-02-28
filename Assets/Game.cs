@@ -51,6 +51,17 @@ public class Game : MonoBehaviour
         //Debug.Log("Button Clicked");
     }
 
+    public Material MaterialFromHoleColor(HoleColor color)
+    {
+        if (color == HoleColor.White) return white;
+        if (color == HoleColor.Orange) return orange;
+        if (color == HoleColor.Green) return green;
+        if (color == HoleColor.Yellow) return yellow;
+        if (color == HoleColor.Pink) return pink;
+        if (color == HoleColor.Purple) return purple;
+        return white;
+    }
+
     public Hole GetClosestHole(Vector2 position)
     {
         Vector2Int closestHole = new Vector2Int(0, 0);
