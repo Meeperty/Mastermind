@@ -7,4 +7,10 @@ public class Hole
     public HoleColor color;
     public Vector3 position;
     public bool enabled;
+
+    public Hole()
+    {
+        color = HoleColor.Empty;
+        enabled = true;
+    }
 }

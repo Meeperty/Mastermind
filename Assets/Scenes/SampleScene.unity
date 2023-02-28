@@ -665,7 +665,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1985e58b8d652e24e946d37a288281ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pegObject: {fileID: 878212061204191214, guid: f1260d303e6bf8d4bb124f1f88cefacd, type: 3}
   color: 1
+  lastFramePickedUp: 0
+  game: {fileID: 1025550311}
+  objectInHand: {fileID: 0}
 --- !u!50 &263761114
 Rigidbody2D:
   serializedVersion: 4
